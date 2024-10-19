@@ -8,9 +8,6 @@ vim.cmd("set nu")
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
 vim.g.mapleader = " "
 
--- noremap: Reursive mapping
---  silent: Display Message
-
 -- TJ's 
 vim.api.nvim_set_keymap("n", "<", "la", {})
 
