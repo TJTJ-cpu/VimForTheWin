@@ -1,15 +1,21 @@
+-- Indentation
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
+
+-- Line Number
 vim.cmd("set rnu")
 vim.cmd("set nu")
 
+-- Cursor
+vim.cmd("set cursorline")
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
 vim.g.mapleader = " "
 
 -- TJ's Keymap
 vim.api.nvim_set_keymap("n", "<leader>,", "la, ", {})
+
 
 -- Quick
 vim.api.nvim_set_keymap("n", "H", "0", { noremap = true, silent = true })
