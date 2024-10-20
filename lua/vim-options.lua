@@ -8,8 +8,8 @@ vim.cmd("set nu")
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
 vim.g.mapleader = " "
 
--- TJ's 
-vim.api.nvim_set_keymap("n", "<", "la", {})
+-- TJ's Keymap
+vim.api.nvim_set_keymap("n", "<leader>,", "la, ", {})
 
 -- Quick
 vim.api.nvim_set_keymap("n", "H", "0", { noremap = true, silent = true })
