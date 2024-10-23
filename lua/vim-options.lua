@@ -1,4 +1,5 @@
 -- Indentation
+
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
@@ -7,7 +8,7 @@ vim.cmd("set shiftwidth=4")
 -- Line Number
 vim.cmd("set rnu")
 vim.cmd("set nu")
-vim.cmd("set scrolloff=15")
+vim.cmd("set scrolloff=10")
 
 -- Cursor
 vim.cmd("set cursorline")
