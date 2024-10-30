@@ -10,6 +10,9 @@ vim.cmd("set rnu")
 vim.cmd("set nu")
 vim.cmd("set scrolloff=10")
 
+-- Terminal
+vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
+
 -- Cursor
 vim.cmd("set cursorline")
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
