@@ -21,7 +21,6 @@ vim.g.mapleader = " "
 -- TJ's Keymap
 vim.api.nvim_set_keymap("n", "<leader>,", "la, ", {})
 
-
 -- Quick
 vim.api.nvim_set_keymap("n", "H", "0", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "H", "0", { noremap = true, silent = true })
@@ -33,7 +32,6 @@ vim.api.nvim_set_keymap("n", "<C-s>", ":w<CR>", { noremap = true, silent = true 
 
 -- Quit
 vim.api.nvim_set_keymap("n", "<leader>q", ":q<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>qa", ":qa<CR>", { noremap = true, silent = true })
 
 -- Spilt Screen
 vim.api.nvim_set_keymap("n", "<leader>v", ":vsplit<CR>", { noremap = true, silent = true })
