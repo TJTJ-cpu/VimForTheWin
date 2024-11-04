@@ -13,6 +13,8 @@ vim.cmd("set scrolloff=10")
 -- Terminal
 vim.cmd("set wrap")
 vim.cmd("set linebreak")
+vim.api.nvim_set_keymap("n", "j", "gj", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "k", "gk", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
 
 -- Cursor
