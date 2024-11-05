@@ -10,8 +10,17 @@ return {
     "williamboman/mason-lspconfig.nvim",
     lazy = false,
     opts = {
-      auto_install = true,
-    },
+       ensure_installed = {
+        "prettierd",
+        "gopls",
+        "clangd",
+        "csharp_ls",
+        "lua_ls",
+        "clangd",
+        "pyright",
+        },
+        automatic_installation = true,
+            }
   },
 	{
 		"neovim/nvim-lspconfig",
@@ -25,7 +34,7 @@ return {
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.pylsp.setup({
+			lspconfig.pyright.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.clangd.setup({
