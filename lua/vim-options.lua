@@ -26,8 +26,8 @@ vim.g.mapleader = " "
 vim.api.nvim_set_keymap("n", "<leader>,", "la, ", {})
 
 -- Quick
-vim.api.nvim_set_keymap("n", "H", "0", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "H", "0", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "H", "^", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "L", "$", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>v", ":vsplit<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>pv", ":Ex<CR>", { noremap = true, silent = true })
 
