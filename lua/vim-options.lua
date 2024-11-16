@@ -32,7 +32,7 @@ vim.api.nvim_set_keymap("n", "<leader>v", ":vsplit<CR>", { noremap = true, silen
 vim.api.nvim_set_keymap("n", "<leader>pv", ":Ex<CR>", { noremap = true, silent = true })
 
 -- Save
-vim.api.nvim_set_keymap("n", "<C-s>", ":w<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-s>", ":wa<CR>", { noremap = true, silent = true })
 
 -- Quit
 vim.api.nvim_set_keymap("n", "<leader>q", ":q<CR>", { noremap = true, silent = true })
