@@ -41,6 +41,10 @@ vim.api.nvim_set_keymap("n", "<leader>q", ":q<CR>", { noremap = true, silent = t
 vim.api.nvim_set_keymap("n", "<leader>v", ":vsplit<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader><Tab>", "<C-w>w", { noremap = true, silent = true })
 
+-- Ctrl C to Copy
+vim.api.nvim_set_keymap("n", "<C-c>", '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<C-c>", '"+y', { noremap = true, silent = true })
+
 -- Yank to System Clipboard
 vim.api.nvim_set_keymap("n", "<leader>y", '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<leader>y", '"+y', { noremap = true, silent = true })
