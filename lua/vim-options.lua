@@ -1,5 +1,7 @@
--- Indentation
+-- Set Leader
+vim.g.mapleader = " "
 
+-- Indentation
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
@@ -16,11 +18,12 @@ vim.cmd("set linebreak")
 vim.api.nvim_set_keymap("n", "j", "gj", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "k", "gk", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
+vim.opt.updatetime = 250
 
 -- Cursor
 vim.cmd("set cursorline")
 vim.opt.guicursor = "n-v-i-c:block-Cursor"
-vim.g.mapleader = " "
+
 
 -- TJ's Keymap
 vim.api.nvim_set_keymap("n", "<leader>,", "la, ", {})
