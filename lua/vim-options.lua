@@ -49,6 +49,10 @@ vim.api.nvim_set_keymap("n", "<leader><Tab>", "<C-w>w", { noremap = true, silent
 vim.api.nvim_set_keymap("n", "<C-c>", '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<C-c>", '"+y', { noremap = true, silent = true })
 
+-- Ctrl A to Select All
+vim.api.nvim_set_keymap("n", "<C-a>", 'ggVG', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<C-a>", 'ggVG', { noremap = true, silent = true })
+
 -- Yank to System Clipboard
 vim.api.nvim_set_keymap("n", "<leader>y", '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<leader>y", '"+y', { noremap = true, silent = true })
