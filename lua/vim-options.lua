@@ -26,8 +26,10 @@ vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
 
 -- TJ's Keymap
-vim.api.nvim_set_keymap("n", "<leader>,", "la, ", {})
+-- vim.api.nvim_set_keymap("n", "<leader>,", "la, ", {})
+vim.api.nvim_set_keymap("n", "<leader>,", "l%yl%a, <Esc>pbylwpi", {})
 vim.api.nvim_set_keymap("n", "v", "viw", { noremap = true, silent = true })
+
 
 -- Quick
 vim.api.nvim_set_keymap("n", "H", "^", { noremap = true, silent = true })
