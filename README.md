@@ -1,6 +1,6 @@
 # ⚡ VimForTheWin
 
-A personal, plugin-powered Vim configuration for 2025 — optimized for speed, minimalism, and daily use on **Windows**.
+A goated nvim 
 
 # 🛠️ Setup Commands For Future Me
 
