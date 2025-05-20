@@ -19,11 +19,19 @@ winget upgrade --id Microsoft.PowerShell --source winget
 winget install --id Git.Git --source winget
 ```
 
+#### 🐍 Python
+
+```console
+winget install Python.Python
+```
+
 #### 💬 Discord
 
 ```console
 winget install --id Discord.Discord --source winget
 ```
+
+
 
 #### 📝 Visual Studio Code
 
