@@ -1,0 +1,46 @@
+{
+    "vim.leader": " ",
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+      { "before": ["<leader>", ","], "commands": ["l%yl%a, <Esc>pbylwpi"] },
+      { "before": ["<leader>", "v"], "commands": [":vsplit"] },
+      { "before": ["<leader>", "pv"], "commands": [":Ex"] },
+      { "before": ["<leader>", "q"], "commands": [":q"] },
+      { "before": ["<C-s>"], "commands": [":wa"] },
+      { "before": ["<leader>", "<Tab>"], "commands": ["<C-w>w"] },
+      { "before": ["H"], "after": ["^"] },
+      { "before": ["L"], "after": ["$"] },
+      { "before": ["<C-a>"], "after": ["g", "g", "V", "G"] },
+      { "before": ["<C-c>"], "after": ["\"", "+", "y"] },
+      { "before": ["<leader>", "y"], "after": ["\"", "+", "y"] },
+      { "before": ["<leader>", "Y"], "after": ["\"", "+", "Y"] },
+      { "before": ["<leader>", "zp"], "after": ["\"", "+", "p"] }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+      { "before": ["<C-c>"], "after": ["\"", "+", "y"] },
+      { "before": ["<C-a>"], "after": ["g", "g", "V", "G"] },
+      { "before": ["<leader>", "y"], "after": ["\"", "+", "y"] },
+      { "before": ["<leader>", "zp"], "after": ["\"", "+", "p"] }
+    ],
+    "vim.insertModeKeyBindings": [],
+    "vim.cursorStylePerMode": {
+      "normal": "block",
+      "insert": "block",
+      "visual": "block"
+    },
+    "editor.lineNumbers": "relative",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorSmoothCaretAnimation": "off",
+    "editor.cursorStyle": "block",
+    "editor.scrollBeyondLastLine": false,
+    "editor.cursorSurroundingLines": 10,
+    "vim.handleKeys": {
+      "<C-s>": false,
+      "<C-a>": false,
+      "<C-c>": false
+    }
+  }
+  
