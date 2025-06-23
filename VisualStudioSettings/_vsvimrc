@@ -1,0 +1,90 @@
+" ========================
+" Leader Key
+" ========================
+let mapleader = " "
+
+" ========================
+" Indentation
+" ========================
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+" ========================
+" Line Number + Viewport
+" ========================
+set rnu
+set nu
+set scrolloff=10
+
+" ========================
+" Cursor & Wrap
+" ========================
+set wrap
+set cursorline
+set guicursor=n-v-c:block
+set vsvimcaret=100
+
+" ========================
+" Clipboard
+" ========================
+set clipboard=unnamed
+nmap <leader>y "+y
+nmap <leader>Y "+Y
+nmap <leader>zp "+p
+nmap <C-V> o<Esc>"+p
+vnoremap <C-X> "+x
+vnoremap <S-Del> "+x
+vnoremap <C-C> "+y
+vnoremap <C-Insert> "+y
+map <C-V> "+gP
+map <S-Insert> "+gP
+imap <C-V> <Esc>"+gpa
+cmap <C-V> <C-R>+
+cmap <S-Insert> <C-R>+
+
+" ========================
+" Navigation
+" ========================
+nnoremap <leader>gd :vsc Edit.GoToDefinition<CR>
+nnoremap <leader>gn :vsc Edit.FindAllReferences<CR>
+nmap <C-O> :vsc View.NavigateBackward<CR>
+nmap <C-I> :vsc View.NavigateForward<CR>
+nmap <C-]> :vsc Edit.GoToDefinition<CR>
+nmap <leader>v :vsplit<CR>
+nmap <leader><Tab> <C-w>w
+
+" ========================
+" Commenting
+" ========================
+nnoremap gcc :vsc Edit.ToggleLineComment<CR>
+vnoremap gc :vsc Edit.ToggleLineComment<CR>
+
+" ========================
+" File Operations
+" ========================
+nmap <C-S> :update<CR>
+vnoremap <C-S> <C-C>:update<CR>
+inoremap <C-S> <C-O>:update<CR>
+nmap <leader>q :q<CR>
+
+" ========================
+" Undo, Redo, Select All
+" ========================
+noremap <C-Z> u
+inoremap <C-Z> <C-O>u
+noremap <C-Y> <C-R>
+inoremap <C-Y> <C-O><C-R>
+noremap <C-A> gggH<C-O>G
+inoremap <C-A> <C-O>gg<C-O>gH<C-O>G
+cnoremap <C-A> <C-C>gggH<C-O>G
+
+" ========================
+" Behavior
+" ========================
+set vsvim_useeditordefaults
+set vsvim_useeditorindent
+behave mswin
+set backspace=indent,eol,start
+set whichwrap+=<,>,[,]
