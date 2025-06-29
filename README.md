@@ -18,7 +18,10 @@ winget upgrade --id Microsoft.PowerShell --source winget
 ```bash
 winget install --id Git.Git --source winget
 ```
-
+#### 🎮 Steam
+```bash
+winget install --id Valve.Steam --exact
+```
 #### 🐍 Python
 
 ```bash
