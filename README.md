@@ -59,27 +59,14 @@ winget install --id Microsoft.VisualStudioCode --source winget
 
 ### ✅ Visual Studio (VsVim)
 
-1. Install the **VsVim** extension.
-2. Copy `_vsvimrc` from:
-   ```
-   VimForTheWin/VisualStudioSettings/_vsvimrc
-   ```
-3. Place it at:
-   ```
-   C:\Users\<YourName>\_vsvimrc
-   ```
-   Or define a custom path in Visual Studio’s VsVim options.
+1. **Install the Extension Vim** in the Extensions marketplace.
 
-4. Reload config inside Visual Studio by running:
+2. **Copy Settings** Copy the settings from
    ```
-   :source $VIMRC
+   VimForTheWin/VisualStudioSettings/VSCodeVimSettings.json
    ```
-
-## 🧠 Reminder
-
-This repo is for personal productivity across:
-
-- Neovim
-- Visual Studio Code (VSCodeVim)
-- Visual Studio (VsVim)
+3. **Open Settings (JSON)** * Press `Ctrl` + `Shift` + `P`.
+   * Type `Open User Settings (JSON)` and select it.
+   * Paste the settings there
+   
 
