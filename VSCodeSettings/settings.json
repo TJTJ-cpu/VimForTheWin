@@ -2,6 +2,8 @@
     "vim.leader": " ",
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindingsNonRecursive": [
+      { "before": ["g", "a"], "commands": ["editor.action.marker.next"] },
+      { "before": ["g", "A"], "commands": ["editor.action.marker.prev"] },
       { "before": ["<leader>", ","], "commands": ["l%yl%a, <Esc>pbylwpi"] },
       { "before": ["<leader>", "v"], "commands": [":vsplit"] },
       { "before": ["<leader>", "pv"], "commands": [":Ex"] },
@@ -14,7 +16,9 @@
       { "before": ["<C-c>"], "after": ["\"", "+", "y"] },
       { "before": ["<leader>", "y"], "after": ["\"", "+", "y"] },
       { "before": ["<leader>", "Y"], "after": ["\"", "+", "Y"] },
-      { "before": ["<leader>", "zp"], "after": ["\"", "+", "p"] }
+      { "before": ["<leader>", "zp"], "after": ["\"", "+", "p"] },
+      { "before": ["j"], "after": ["g", "j"] },
+      { "before": ["k"], "after": ["g", "k"] }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
       { "before": ["<C-c>"], "after": ["\"", "+", "y"] },
@@ -41,6 +45,10 @@
       "<C-s>": false,
       "<C-a>": false,
       "<C-c>": false
-    }
+    },
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "git.openRepositoryInParentFolders": "always",
+    "claudeCode.preferredLocation": "panel"
   }
   
