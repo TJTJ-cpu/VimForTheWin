@@ -8,7 +8,7 @@ A goated Neovim + Vim keybinding setup for VS Code and Visual Studio.
 ### 🔄 Upgrade PowerShell
 
 ```bash
-winget upgrade --id Microsoft.PowerShell --source winget
+winget upgrade Microsoft.PowerShell
 ```
 
 ### 📦 Install Essentials
