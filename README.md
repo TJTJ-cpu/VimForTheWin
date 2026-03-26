@@ -5,10 +5,10 @@ A goated Neovim + Vim keybinding setup for VS Code and Visual Studio.
 
 ## 🛠️ Setup Commands For Future Me
 
-### 🔄 Upgrade PowerShell
+### 🔄 Install PowerShell
 
 ```bash
-winget upgrade Microsoft.PowerShell
+winget install Microsoft.PowerShell
 ```
 
 ### 📦 Install Essentials
