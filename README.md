@@ -40,6 +40,23 @@ winget install --id Discord.Discord --source winget
 winget install --id Microsoft.VisualStudioCode --source winget
 ```
 
+# 📽️ FFmpeg Quick Scripts
+
+A handy reference of go-to FFmpeg commands for fast, command-line video editing. 
+
+### 🎞️ Join Videos (Lossless)
+Quickly merge multiple video files into a single output
+
+```bash
+ffmpeg -f concat -safe 0 -i input.txt -c copy output.mkv
+```
+### ⏩ Speed Up Video & Audio (4x)
+
+Increase the playback speed of a video by 400%.
+
+```bash
+ffmpeg -i input.mkv -filter_complex "[0:v]setpts=0.25*PTS[v];[0:a]atempo=2.0,atempo=2.0[a]" -map "[v]" -map "[a]" output.mkv
+```
 
 ## 🧭 Configuration Locations
 
