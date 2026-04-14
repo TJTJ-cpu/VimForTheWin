@@ -18,14 +18,20 @@ winget install Microsoft.PowerShell
 ```bash
 winget install --id Git.Git --source winget
 ```
+
 #### 🎮 Steam
 ```bash
 winget install --id Valve.Steam --exact
 ```
-#### 🐍 Python
 
+#### 🐍 Python
 ```bash
 winget install Python.Python
+```
+
+#### 📽️ FFmpeg
+```bash
+winget install -e --id Gyan.FFmpeg
 ```
 
 #### 💬 Discord
