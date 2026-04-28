@@ -3,13 +3,9 @@ return {
     "williamboman/mason.nvim",
     lazy = false,
     config = function()
-      require("mason").setup({
-        ensure_installed = {
-          "prettierd",
-          "eslint_d",
-          "typescript-language-server"
-        }
-      })
+      require("mason").setup()
+      -- Note: mason.nvim setup() doesn't support "ensure_installed". 
+      -- Use mason-lspconfig for LSPs (below) or mason-tool-installer for formatters.
     end,
   },
   {
@@ -20,7 +16,7 @@ return {
         "clangd",
         "lua_ls",
         "pyright",
-        "tsserver",
+        "ts_ls",
       },
       automatic_installation = true,
     },
@@ -33,7 +29,9 @@ return {
 
       lspconfig.clangd.setup({ capabilities = capabilities })
       lspconfig.pyright.setup({ capabilities = capabilities })
-      lspconfig.tsserver.setup({ capabilities = capabilities })
+      
+      -- CHANGED: Change tsserver to ts_ls here
+      lspconfig.ts_ls.setup({ capabilities = capabilities }) 
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
@@ -44,4 +42,3 @@ return {
     end,
   },
 }
-
