@@ -1,49 +1,17 @@
 # ⚡ VimForTheWin
 
-A goated Neovim + Vim keybinding setup for VS Code and Visual Studio.
+# 🐚 Cool Shell Command
 
+## 💾 Folder Size Scanner
 
-## 🛠️ Setup Commands For Future Me
-
-### 🔄 Install PowerShell
-
-```bash
-winget install Microsoft.PowerShell
 ```
-
-### 📦 Install Essentials
-
-#### 🔧 Git
-
-```bash
-winget install --id Git.Git --source winget
-```
-
-#### 🎮 Steam
-```bash
-winget install --id Valve.Steam --exact
-```
-
-#### 🐍 Python
-```bash
-winget install Python.Python
-```
-
-#### 📽️ FFmpeg
-```bash
-winget install -e --id Gyan.FFmpeg
-```
-
-#### 💬 Discord
-
-```bash
-winget install --id Discord.Discord --source winget
-```
-
-#### 📝 Visual Studio Code
-
-```bash
-winget install --id Microsoft.VisualStudioCode --source winget
+Get-ChildItem -Directory | ForEach-Object {
+    $size = (Get-ChildItem $_.FullName -Recurse -File -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum).Sum
+    [PSCustomObject]@{
+        Name = $_.Name
+        SizeGB = [math]::Round($size / 1GB, 2)
+    }
+} | Sort-Object SizeGB -Descending
 ```
 
 # 📽️ FFmpeg Quick Scripts
