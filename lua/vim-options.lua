@@ -52,7 +52,7 @@ vim.api.nvim_set_keymap("n", "<leader>pv", ":Ex<CR>", { noremap = true, silent =
 vim.api.nvim_set_keymap("n", "<C-s>", ":wa<CR>", { noremap = true, silent = true })
 
 -- Quit
-vim.api.nvim_set_keymap("n", "<leader>pv", ":Ex<CR>", ...)
+vim.api.nvim_set_keymap("n", "<leader>pv", ":Ex<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>q", ":q<CR>", { noremap = true, silent = true })
 
 -- Spilt Screen
