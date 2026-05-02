@@ -1,6 +1,17 @@
 -- Set Leader
 vim.g.mapleader = " "
 
+-- Clean up stale ShaDa tmp files left by crashed/killed nvim instances (Windows E138 fix)
+vim.api.nvim_create_autocmd("VimEnter", {
+  once = true,
+  callback = function()
+    local shada_dir = vim.fn.stdpath("data") .. "/shada"
+    for _, f in ipairs(vim.fn.glob(shada_dir .. "/main.shada.tmp.*", false, true)) do
+      vim.fn.delete(f)
+    end
+  end,
+})
+
 -- Indentation
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
