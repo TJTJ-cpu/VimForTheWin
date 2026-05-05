@@ -51,6 +51,9 @@ vim.api.nvim_set_keymap("n", "<leader>pv", ":Ex<CR>", { noremap = true, silent =
 -- Save
 vim.api.nvim_set_keymap("n", "<C-s>", ":wa<CR>", { noremap = true, silent = true })
 
+-- Diagnostics
+vim.keymap.set("n", "<leader>ga", vim.diagnostic.goto_next, { noremap = true, silent = true })
+
 -- Quit
 vim.api.nvim_set_keymap("n", "<leader>pv", ":Ex<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>q", ":q<CR>", { noremap = true, silent = true })
