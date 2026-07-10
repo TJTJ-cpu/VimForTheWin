@@ -2,8 +2,12 @@
 
 # 🐚 Cool Shell Command
 
-## 💾 Folder Size Scanner
-
+## 💾 Folder 
+# Delete
+```
+del *.jpg
+```
+# Search
 ```
 Get-ChildItem -Directory | ForEach-Object {
     $size = (Get-ChildItem $_.FullName -Recurse -File -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum).Sum
