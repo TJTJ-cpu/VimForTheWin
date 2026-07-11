@@ -3,11 +3,11 @@
 # 🐚 Cool Shell Command
 
 ## 💾 Folder 
-# Delete
+### Delete
 ```
 del *.jpg
 ```
-# Search
+### Search
 ```
 Get-ChildItem -Directory | ForEach-Object {
     $size = (Get-ChildItem $_.FullName -Recurse -File -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum).Sum
