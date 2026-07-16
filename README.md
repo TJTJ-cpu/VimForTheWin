@@ -15,7 +15,7 @@ Get-ChildItem -Directory | ForEach-Object {
         Name = $_.Name
         SizeGB = [math]::Round($size / 1GB, 2)
     }
-} | Sort-Object SizeGB -Descending
+} | Sort-Object SizeGB -Descending | Out-String | Set-Clipboard
 ```
 
 # 📽️ FFmpeg Quick Scripts
