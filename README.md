@@ -3,9 +3,13 @@
 # 🐚 Cool Shell Command
 
 ## 💾 Folder 
-### Delete
+### Delete (Single)
 ```
 del *.jpg
+```
+### Delete (Multiple)
+```
+del *.jpg, *.aae, *.heic, *.png
 ```
 ### Search
 ```
