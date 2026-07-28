@@ -9,7 +9,7 @@ del *.jpg
 ```
 ### Delete (Multiple)
 ```
-del *.jpg, *.aae, *.heic, *.png
+del *.jpg, *.aae, *.heic, *.png, *jpeg
 ```
 ### Search
 ```
