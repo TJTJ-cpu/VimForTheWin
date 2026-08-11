@@ -40,7 +40,8 @@ Increase the playback speed of a video by 400%.
 ffmpeg -i input.mkv -filter_complex "[0:v]setpts=0.25*PTS[v];[0:a]atempo=2.0,atempo=2.0[a]" -map "[v]" -map "[a]" output.mkv
 ```
 
-###🪞 Batch Flip Horizontally (PowerShell)
+
+### 🪞 Batch Flip Horizontally (PowerShell)
 Horizontally mirror all MP4 files in the current folder and overwrite the originals.
 ```
 Get-ChildItem *.mp4 | ForEach-Object { ffmpeg -i $_.FullName -vf hflip -c:a copy "flipped_$($_.Name)" }
