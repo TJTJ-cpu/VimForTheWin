@@ -13,7 +13,8 @@ del *.jpg, *.aae, *.heic, *.png, *jpeg
 ```
 ### Search
 ```
-Get-ChildItem -Force -Directory | ForEach-Object { [pscustomobject]@{ Name = $_.Name; SizeGB = [math]::Round((Get-ChildItem $_.FullName -Recurse -Force -File -ErrorAction SilentlyContinue | Measure-Object Length -Sum).Sum / 1GB, 2) } } | Sort-Object SizeGB -Descending | Select-Object -First 20
+cd C:\Users\TJ\AppData
+Get-ChildItem -Force -Directory | ForEach-Object { [pscustomobject]@{ Name = $_.Name; SizeGB = [math]::Round((Get-ChildItem $_.FullName -Recurse -Force -File -ErrorAction SilentlyContinue | Measure-Object Length -Sum).Sum / 1GB, 2) } } | Sort-Object SizeGB -Descending
 ```
 
 # 📽️ FFmpeg Quick Scripts
